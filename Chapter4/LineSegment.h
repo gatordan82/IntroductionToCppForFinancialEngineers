@@ -11,8 +11,8 @@
 class LineSegment
 {
 private:
-    Point e1;
-    Point e2;
+    Point e1; // Start endpoint
+    Point e2; // End endpoint
 
 public:
     // Constructors
