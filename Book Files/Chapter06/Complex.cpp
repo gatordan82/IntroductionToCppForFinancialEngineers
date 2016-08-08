@@ -353,7 +353,7 @@ Complex cgt(const Complex& c)
 }
 
 
-ostream& operator << (ostream& os, const Complex& cmp)
+std::ostream& operator << (std::ostream& os, const Complex& cmp)
 { // Print the complex number
 
 	os << "[" << cmp.x << ", " << cmp.y << "]\n";

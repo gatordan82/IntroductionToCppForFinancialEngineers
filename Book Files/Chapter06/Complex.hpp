@@ -13,7 +13,7 @@
 #ifndef COMPLEX_HXX
 #define COMPLEX_HXX
 
-#include <iostream.h>
+#include <iostream>
 //using namespace std;
 
 class Complex
@@ -82,7 +82,7 @@ public:
 	   friend Complex tan(const Complex& c);	   // The tangent function
        friend Complex cgt(const Complex& c);	   // The cotangent function
 
-       friend ostream& operator << (ostream& os, const Complex& cmp);
+       friend std::ostream& operator << (std::ostream& os, const Complex& cmp);
 
 };
 
