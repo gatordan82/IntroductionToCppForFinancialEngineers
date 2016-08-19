@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9096E26C-20DD-40FD-96DF-649C8B7FDAED}</ProjectGuid>
-    <RootNamespace>Chapter7</RootNamespace>
+    <ProjectGuid>{5A2F97C2-FC6C-4152-AA21-EBC0E688D107}</ProjectGuid>
+    <RootNamespace>Chapter9</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -81,8 +81,6 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -105,8 +103,6 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -114,21 +110,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Book Files\Chapter03\EuropeanOption.cpp" />
-    <ClCompile Include="..\Book Files\Utilities\DateAndTime\DatasimDate.cpp" />
-    <ClCompile Include="..\Book Files\Utilities\DateAndTime\DateTime.cpp" />
-    <ClCompile Include="Employee.cpp" />
-    <ClCompile Include="NonlinearSolver.cpp" />
-    <ClCompile Include="Person.cpp" />
-    <ClCompile Include="SteffensensSolver.cpp" />
-    <ClCompile Include="Test.cpp" />
+    <ClInclude Include="Base.h" />
+    <ClInclude Include="D1.h" />
+    <ClInclude Include="D2.h" />
+    <ClInclude Include="MathErr.h" />
+    <ClInclude Include="ZeroDivide.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Book Files\Chapter03\EuropeanOption.hpp" />
-    <ClInclude Include="Employee.h" />
-    <ClInclude Include="NonlinearSolver.h" />
-    <ClInclude Include="Person.h" />
-    <ClInclude Include="SteffensensSolver.h" />
+    <ClCompile Include="Base.cpp" />
+    <ClCompile Include="D1.cpp" />
+    <ClCompile Include="D2.cpp" />
+    <ClCompile Include="MathErr.cpp" />
+    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="ZeroDivide.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

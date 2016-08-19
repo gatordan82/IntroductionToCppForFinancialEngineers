@@ -9,6 +9,7 @@ public:
     double(*myF)(double x);
     double tol;
 
+	NonlinearSolver() {};
     NonlinearSolver(double (*function)(double)) {};
     virtual double solve() = 0; 
 };

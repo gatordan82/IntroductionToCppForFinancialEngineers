@@ -13,7 +13,9 @@ private:
 
 public:
     SteffensensSolver(double guess, double (*myFunc)(double x));
-    virtual ~SteffensensSolver();
+	double solve();
+	virtual ~SteffensensSolver();
+	void printStatistics() const;
 };
 
 #endif // !STEFFENSENSSOLVER_H
